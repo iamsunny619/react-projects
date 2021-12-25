@@ -45,7 +45,7 @@ const Create = () => {
     if (data) {
       history.push("/");
     }
-  }, [data]);
+  }, [data, history]);
   return (
     <div className="create">
       <h2 className="page-title">

@@ -44,3 +44,13 @@
   border-radius: 4px;
   margin: 20px auto 0;
 }
+
+.dark {
+  background: black;
+}
+
+.dark p,
+.dark h3,
+.dark div {
+  color: white;
+}
