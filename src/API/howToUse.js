@@ -2,7 +2,7 @@ const howToUseApp = [
   {
     id: 1,
     title: "Online Support",
-    info: "We are always available to provide any kind of support over the net/call also by loggin virtually in cases(which won't required, offcourse), Oue team will get you resolve the problem you are facing.",
+    info: "We are always available to provide any kind of support over the net/call also by loggin virtually in cases(which won't required, offcourse), Our team will get you resolve the problem you are facing.",
   },
   {
     id: 2,

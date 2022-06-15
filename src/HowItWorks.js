@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import workapi from "./API/workApi.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Aboutus from "./Aboutus.js";
 
 const HowItWorks = () => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const HowItWorks = () => {
                     key={id}
                     className="col-12 col-lg-4 text-center work-container-subdiv"
                   >
-                    <i class={`fontawesome-style ${logo}`}></i>
+                    <i className={`fontawesome-style ${logo}`}></i>
                     <h2 className="sub-heading">{title}</h2>
                     <p className="main-hero-para w-100">{info}</p>
                   </div>
@@ -37,17 +38,18 @@ const HowItWorks = () => {
               );
             })}
           </div>
-          <div className="input-group-button-service-conatiner">
+          {/* <div className="input-group-button-service-conatiner">
             <button
               className="input-group-button-service"
               onClick={handleRouteService}
             >
               more..
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
-      <div style={{ marginBottom: "20px" }}></div>
+      <div style={{ marginBottom: "10px", marginTop: "10px" }}></div>
+      <Aboutus />
     </>
   );
 };

@@ -4,6 +4,43 @@ const Footer = () => {
   return (
     <>
       <footer>
+        <div className="footer-conatiner">
+          <div className="social-section">
+            <h2>Follow Us On</h2>
+            <div>
+              <div className=" icon-footer">
+                <div className="col-3 mx-auto">
+                  <i class="fab fa-facebook-f fontawesome-style"></i>
+                </div>
+                <div className="col-3 mx-auto">
+                  <i class="fab fa-instagram fontawesome-style"></i>
+                </div>
+                <div className="col-3 mx-auto">
+                  <a href="https://twitter.com/iamsunny619" target="_blank">
+                    <i class="fab fa-twitter fontawesome-style"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style={{ width: "60%" }} />
+          <div className="copyright-tagline">
+            Copyright @ 2022 iamsunny619. All rights reserved.{" "}
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
+
+/* import React from "react";
+
+const Footer = () => {
+  return (
+    <>
+      <footer>
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-10 mx-auto">
@@ -95,3 +132,4 @@ const Footer = () => {
 };
 
 export default Footer;
+ */

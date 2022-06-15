@@ -1,17 +1,22 @@
 import React, { useState, useEffect } from "react";
 import howToUseApp from "./API/howToUse.js";
-import Carousel from "react-img-carousel";
-import "react-img-carousel/lib/carousel.css";
+// import Carousel from "react-img-carousel";
+// import "react-img-carousel/lib/carousel.css";
 import { useHistory } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useLocation } from "react-router-dom";
 
 const Aboutus = () => {
   const navigate = useHistory();
   const [aboutData, setAboutData] = useState(howToUseApp);
-  const handleRouteContact = () => {
-    navigate.push("/contact");
+  const handleRouteServices = () => {
+    navigate.push("/service");
   };
+
+  const currentPath = "/service";
+  const location = useLocation();
+  const showButton = currentPath === location.pathname;
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -19,13 +24,12 @@ const Aboutus = () => {
 
   return (
     <>
-      <Carousel
+      {/* <Carousel
         cellPadding={3}
         dots={false}
         autoplay={true}
         autoplaySpeed={2000}
         draggable={true}
-        easing="linear"
       >
         <img src="./images/c-1.jpg" />
         <img src="./images/c-2.jpg" />
@@ -35,7 +39,7 @@ const Aboutus = () => {
         <img src="./images/c-6.jpg" />
         <img src="./images/c-7.jpg" />
         <img src="./images/c-8.jpg" />
-      </Carousel>
+      </Carousel> */}
 
       {/*   <section className="common-section our-services">
         <div className="container mb-5">
@@ -105,12 +109,14 @@ const Aboutus = () => {
               })}
 
               <br />
-              <button
-                className="btn-style btn-style-border"
-                onClick={handleRouteContact}
-              >
-                learn more
-              </button>
+              {!showButton && (
+                <button
+                  className="btn-style btn-style-border"
+                  onClick={handleRouteServices}
+                >
+                  learn more
+                </button>
+              )}
             </div>
 
             {/* images section  */}

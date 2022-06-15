@@ -3,7 +3,7 @@ const workapi = [
     id: 1,
     logo: "fas fa-download",
     title: "Software Installation",
-    info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?",
+    info: "Our service includes Installation of software ",
   },
   {
     id: 2,
