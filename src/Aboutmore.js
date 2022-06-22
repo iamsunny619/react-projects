@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { ourTeamProfie } from "./API/ourTeamProfile";
+import ImageSlider from "./pages/ImageSlider";
+import FooterCopy from "./FooterCopy";
 
 const Aboutmore = () => {
   useEffect(() => {
@@ -8,13 +11,8 @@ const Aboutmore = () => {
   });
 
   return (
-    <>
-      <div
-        style={{
-          marginTop: "20px",
-        }}
-      ></div>
-      <div className="aboutmore-conatiner">
+    <div className="about-container-full">
+      <section className="section-full">
         <div className="headingDiv">
           <h1>About Us</h1>
         </div>
@@ -39,10 +37,14 @@ const Aboutmore = () => {
           </p>{" "}
           as well as in day to day life.
         </div>
-        <div className="teamImage" data-aos="zoom-in">
-          <img src="./images/team-1.svg" alt="img of Team" />
+      </section>
+      <section className="section-full">
+        <div className="teamImage">
+          <img src="./images/team.jpg" alt="img of Team" />
         </div>
+      </section>
 
+      <section className="section-full">
         <div className="teamInclude">
           <h3>The Team included in Board of Directors</h3>
           <div className="teamList">
@@ -79,13 +81,20 @@ const Aboutmore = () => {
             economical and eco-friendly to exceed customer satisfaction. We have
             more than 100 satisfied clients throughout Bangalore.
           </div>
-          <div className="our-address">
+        </div>
+
+        <div className="our-address section-full">
+          <div>
+            <ImageSlider slides={ourTeamProfie} />
+          </div>
+          <div className="addressFont">
             3/A, Ground Floor, AECS Layout, Near Bank Of Baroda, Marathahalli
             Post, Bangalore-560037, 080 4228 6502, +919686454757.
           </div>
+          <FooterCopy />
         </div>
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 

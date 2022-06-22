@@ -15,12 +15,21 @@ const HowItWorks = () => {
   const handleRouteService = () => {
     navigate.push("/service");
   };
+
+  const slides = [
+    <image src="./images.c-1" alt="dasfcdi" />,
+    <image src="./images/c-2" />,
+    <image src="./images/c-3" />,
+    <image src="./images/c-4" />,
+    <image src="./images/c-5" />,
+  ];
   return (
     <>
       <section>
         <div className="work-container container">
           <h1 className="main-heading text-center">Our services</h1>
-          <div className="row">
+
+          {/* <div className="row">
             {workData.map((curElem) => {
               const { id, logo, title, info } = curElem;
               return (
@@ -37,7 +46,7 @@ const HowItWorks = () => {
                 </>
               );
             })}
-          </div>
+          </div> */}
           {/* <div className="input-group-button-service-conatiner">
             <button
               className="input-group-button-service"

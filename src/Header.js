@@ -25,13 +25,19 @@ const Header = () => {
                 Your Technology Partners <br />
               </h1>
               <p className="main-hero-para">
-                Our company is dedicated to providing our customers with total
-                computer solutions for business, industry, and individuals. We
-                Weltech Computers are one of the leading traders of assembled
-                computers which are available in different configurations. Other
-                than this, we also offer our services as distributors of
-                components from leading brands like HP, Acer, Lenevo, Dell,
-                Apple, Compaq, etc.
+                Weltech Solutions is an IT services company that provides IT
+                solutions in and across INDIA. Weltech is all about what strong
+                vision, integrity, expertise and customer service that we create
+                in the market, maintaining high quality and excellent Service
+                Delivery. We deliver highly responsive and innovative solutions
+                that help clients to align their information technology strategy
+                with their business goals, ideas, and address the most important
+                IT needs today through a combination of consultancy, strategic
+                methodologies and Collaborative Engagement Model. That's why our
+                goal is to provide an experience that is tailored to your
+                company's needs. No matter the budget, we pride ourselves on
+                providing professional customer service. We know the art of
+                blending in with both large and small organizations.
               </p>
               {/* <h3>Get early access for you</h3> */}
               <div className="input-group mt-3">
@@ -51,12 +57,12 @@ const Header = () => {
               className="col-12 col-lg-6 header-right-side d-flex justify-content-center align-items-center main-herosection-images"
             >
               <img
-                src="./images/server_tech.svg"
+                src="./images/server_tech1.svg"
                 alt="Services"
                 className="img-fluid"
               />
               <img
-                src="./images/delivery_shopping.svg"
+                src="./images/delivery_shopping1.svg"
                 alt="Services"
                 className="img-fluid main-hero-img2"
               />

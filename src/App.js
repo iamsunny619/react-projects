@@ -8,6 +8,8 @@ import ScrollToTop from "./Helper/ScrollToTop";
 import Navbar from "./navbar";
 import Footer from "./Footer";
 import AboutMore from "./pages/AboutMore";
+import ServiceDetails from "./ServiceDetails";
+import { ThankYou } from "./ThankYou";
 
 const App = () => {
   return (
@@ -20,6 +22,12 @@ const App = () => {
           <Route exact path="/about" component={AboutMore}></Route>
           <Route exact path="/contact" component={Contact}></Route>
           <Route exact path="/service" component={Service}></Route>
+          <Route exact path="/thankyou" component={ThankYou}></Route>
+          <Route
+            exact
+            path="/servicedetails/:id"
+            component={ServiceDetails}
+          ></Route>
           <Route component={Error}></Route>
         </Switch>
         <Footer />

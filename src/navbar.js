@@ -7,17 +7,17 @@ const Navbar = () => {
   return (
     <>
       <section className="navbar-bg">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container">
-            <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-lg navbar-light ">
+          <div className="container">
+            <a className="navbar-brand" href="/">
               <img
                 className="logo"
-                src="./images/weltechLogo.jpg"
+                src="./images/weltechlogo.jpeg"
                 alt="Wletech.logo"
               />
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               aria-label="Toggle navigation"
@@ -42,20 +42,12 @@ const Navbar = () => {
                     About
                   </NavLink>
                 </li>
-                {/* <li class="nav-item">
-                  <NavLink class="nav-link" to="/contact">
+                <li className="nav-item">
+                  <NavLink exact className="nav-link" to="/contact">
                     Contact
                   </NavLink>
-                </li> */}
+                </li>
               </ul>
-              {/* <form class="d-flex">
-                <button class="btn  btn-style" type="submit">
-                  Sign Up
-                </button>
-                <button class="btn  btn-style btn-style-border" type="submit">
-                  Log in
-                </button>
-              </form> */}
             </div>
           </div>
         </nav>
