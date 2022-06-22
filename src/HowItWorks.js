@@ -28,33 +28,6 @@ const HowItWorks = () => {
       <section>
         <div className="work-container container">
           <h1 className="main-heading text-center">Our services</h1>
-
-          {/* <div className="row">
-            {workData.map((curElem) => {
-              const { id, logo, title, info } = curElem;
-              return (
-                <>
-                  <div
-                    data-aos="flip-left"
-                    key={id}
-                    className="col-12 col-lg-4 text-center work-container-subdiv"
-                  >
-                    <i className={`fontawesome-style ${logo}`}></i>
-                    <h2 className="sub-heading">{title}</h2>
-                    <p className="main-hero-para w-100">{info}</p>
-                  </div>
-                </>
-              );
-            })}
-          </div> */}
-          {/* <div className="input-group-button-service-conatiner">
-            <button
-              className="input-group-button-service"
-              onClick={handleRouteService}
-            >
-              more..
-            </button>
-          </div> */}
         </div>
       </section>
       <div style={{ marginBottom: "10px", marginTop: "10px" }}></div>
